@@ -9,7 +9,7 @@ export default {
       if(input?.query){
         const userFromRedis = await client.get(input?.query)
         const userObj = JSON.parse(userFromRedis)
-        if(!userObj){
+        if(userObj){
           try{
             if(userObj.rank > 100){
               const first100users = await db("users").select("*").whereBetween('rank',[0, 100]).orderBy('rank');
