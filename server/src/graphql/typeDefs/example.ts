@@ -14,5 +14,6 @@ export default gql`
   }
   type Mutation {
     deleteExample(input: deleteInput!): Example
+    generateUsers: String
   }
 `;

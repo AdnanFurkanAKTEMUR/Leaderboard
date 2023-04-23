@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon",
-    "knex": "./node_modules/.bin/knex --knexfile src/database/knexfile.ts"
+    "knex": "./node_modules/.bin/knex --knexfile src/database/knexfile.ts",
+    "redis": "redis-server"
   },
   "author": "",
   "license": "ISC",
@@ -25,6 +26,7 @@
     "graphql-scalars": "^1.21.3",
     "knex": "^2.4.2",
     "nodemon": "^2.0.22",
+    "redis": "^4.6.5",
     "sqlite3": "^5.1.6",
     "ts-node": "^10.9.1",
     "uuid": "^9.0.0"
