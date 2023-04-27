@@ -11,7 +11,7 @@ const defaultOptions: DefaultOptions = {
   },
 };
 const httpLink = new HttpLink({
-  uri: "http://www.aaktemur.com.tr/graphql",
+  uri: "https://www.aaktemur.com.tr/graphql",
   credentials: "include"
 });
 
